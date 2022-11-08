@@ -128,6 +128,9 @@ const RepairScreen: React.FC = () => {
         )
       }
       <Select
+        onClose={(data) => {
+          console.log(data)
+        }}
         actionId='cars'
         onSelect={handleSelectCar}
         options={new Array(20).fill({ label: '生产车间', value: Math.random().toString(36) })}

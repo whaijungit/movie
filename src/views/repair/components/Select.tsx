@@ -8,12 +8,12 @@ interface ISelectProps {
   actionId: string
   options: ILabel[]
   onSelect: (item: ILabel) => void
+  onClose?: (data: unknown) => void
 }
 
-const Select: React.FC<ISelectProps> = ({ actionId, options, onSelect }) => {
+const Select: React.FC<ISelectProps> = ({ actionId, options, onSelect, onClose }) => {
   const [curIndex, setCurIndex] = React.useState(-1);
   const actionSheetRef = React.useRef<ActionSheetRef>(null!)
-
   const handleSelect = async (item: ILabel, index: number) => {
     setCurIndex(index)
     await awit(100)
@@ -21,7 +21,9 @@ const Select: React.FC<ISelectProps> = ({ actionId, options, onSelect }) => {
   }
   return (
     <ActionSheet
+      gestureEnabled
       id={actionId}
+      onClose={onClose}
       ref={actionSheetRef}
       containerStyle={{
         height: options.length === 0 ? 30 : 400,
@@ -30,7 +32,6 @@ const Select: React.FC<ISelectProps> = ({ actionId, options, onSelect }) => {
         width: 100,
         backgroundColor: '#ddd'
       }}
-      gestureEnabled
     >
       <FlatList data={options} renderItem={({ item, index }) => (
         <View

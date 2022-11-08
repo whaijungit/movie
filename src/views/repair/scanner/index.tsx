@@ -6,7 +6,7 @@ import { RNCamera as Camera, BarCodeReadEvent } from 'react-native-camera'
 import { View, StyleSheet, Animated, TouchableOpacity, Alert } from 'react-native'
 
 const ScannerScreen: React.FC = () => {
-  const cameraRef = React.useRef<Camera>()
+  const cameraRef = React.useRef<Camera>().current
   const top = React.useRef(new Animated.Value(20)).current
   const [data, setData] = React.useState<string | null>(null)
   const [camareType, setCamareType] = React.useState<'back' | 'front'>('back')
@@ -53,7 +53,7 @@ const ScannerScreen: React.FC = () => {
       <View style={styles.camerContainer}>
         <Camera
           autoFocus="on"
-          ref={cameraRef}
+          ref={() => cameraRef}
           type={camareType}
           captureAudio={false}
           onBarCodeRead={data ? undefined : handleScanner}

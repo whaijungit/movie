@@ -1,7 +1,7 @@
 import React from 'react'
+import { Navigation } from '@/types'
 import HeaderBar from '../components/headerBar'
 import { View, StyleSheet } from 'react-native'
-import { Navigation } from '@/types/navigation'
 import { useNavigation } from '@react-navigation/native'
 
 const SpotCheckDetailScreen: React.FC = () => {

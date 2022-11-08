@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "esnext",
-    "module": "commonjs",
     "lib": [
       "esnext"
     ],
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "commonjs",
+    "skipLibCheck": true,
     "jsx": "react-native",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "skipLibCheck": true,
     "paths": {
       "@/*": [
         "./src/*"
