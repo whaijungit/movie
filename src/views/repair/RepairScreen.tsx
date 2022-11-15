@@ -49,7 +49,6 @@ const RepairScreen: React.FC = () => {
     })
   }
   const handlePressSelect = () => {
-    // todo
     SheetManager.show('cars')
   }
 

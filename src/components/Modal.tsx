@@ -17,11 +17,13 @@ const Modal: React.FC<IModalProps> = ({ visible, children, onClose }) => {
       visible={visible}
       animationType="fade"
       onRequestClose={handleCloseModal}
-      children={<View style={styles.modalContainerStyle}
-        children={children}
-      />}
+      children={<View children={children} style={styles.modalContainerStyle} />}
     />
   )
+}
+
+Modal.defaultProps = {
+  visible: false
 }
 
 const styles = StyleSheet.create({

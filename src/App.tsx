@@ -3,14 +3,14 @@ import store from './redux/store'
 import { Provider } from 'react-redux'
 import { StatusBar, View } from 'react-native'
 import SplashScreen from 'react-native-splash-screen'
-import RepairNavigator from './routers/RepairNavigator'
+import RepairNavigator from '@/routers/RepairNavigator'
 import { SheetProvider } from 'react-native-actions-sheet'
 
 const App: React.FC = () => {
   React.useEffect(() => {
     setTimeout(() => {
       SplashScreen.hide()
-    }, 1000);
+    }, 100);
   }, [])
   return (
     <Provider store={store}>
