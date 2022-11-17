@@ -4,7 +4,7 @@
 
 ### 技术栈
 
-react-native + typescript
+> react-native + typescript + Android SDK RNCAMEAR SCANNER AVDDEVICES3.0
 
 ### 原生模块
 
