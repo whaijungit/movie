@@ -9,7 +9,6 @@ import { SheetManager } from 'react-native-actions-sheet'
 import { View, StyleSheet, Button, FlatList } from 'react-native'
 
 const RepairScreen: React.FC = () => {
-  const [] = React.useState<ILabel[]>([])
   const [loading, setLoading] = React.useState(true)
   const [repairs, setRepairs] = React.useState<number[]>([])
   const [refreshing, setRefreshing] = React.useState(false)
@@ -121,8 +120,7 @@ const RepairScreen: React.FC = () => {
             pinchGestureEnabled={false}
             onRefresh={refreshHeaderhandle}
             keyExtractor={(item, index) => item + index + Math.random() + ''}
-            // @ts-ignore
-            renderItem={({ item }) => (<ItemRepair type={condition.type} item={item} key={Math.random() + '' + Math.random() + Date.now()} />)}
+            renderItem={({ item }) => (<ItemRepair type={condition.type as any} item={item} key={Math.random() + '' + Math.random() + Date.now()} />)}
           />
         )
       }

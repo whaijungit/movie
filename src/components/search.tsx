@@ -1,6 +1,6 @@
 import React from 'react'
-import { Colors } from '@/helpers'
-import window from '@/helpers/window'
+import { Colors } from '../helpers'
+import { windowSize } from '../helpers'
 import { Pressable, StyleSheet, Text } from 'react-native'
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
 
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#f2f2f2',
-    width: window.width * 0.8,
+    width: windowSize.width * 0.8,
   },
   textStyle: {
     fontSize: 16,

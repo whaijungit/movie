@@ -1,5 +1,5 @@
 import React from 'react'
-import { windowSize } from '@/helpers'
+import { windowSize } from '../helpers'
 import { StyleSheet, View } from 'react-native'
 
 interface HomeHeaderProps {

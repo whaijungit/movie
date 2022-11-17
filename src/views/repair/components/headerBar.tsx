@@ -1,6 +1,6 @@
 import React from 'react'
-import { Colors, windowSize } from '@/helpers'
 import { Navigation } from '@/types'
+import { Colors, windowSize } from '@/helpers'
 import { useNavigation } from '@react-navigation/native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { View, Text, StyleSheet, Pressable, Animated } from 'react-native'

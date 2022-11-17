@@ -74,7 +74,6 @@ const ConditionBar: React.FC<IConditionBarProps> = ({ taskValue, selectValue, bu
 const styles = StyleSheet.create({
   conditionStyle: {
     padding: 5,
-    // borderWidth: 1,
     width: windowSize.width,
   },
   conditionOneStyle: {
@@ -123,17 +122,16 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   iconSearchStyle: {
+    left: 8,
     position: 'absolute',
-    left: 8
   },
   conditionBtnsContainerStyle: {
-    flexDirection: 'row',
     flex: 1,
-    // justifyContent: 'space-between',
+    flexDirection: 'row',
   },
   conditionBtnStyle: {
-    flexDirection: 'row',
     width: '100%',
+    flexDirection: 'row',
     alignItems: 'center',
   },
   textStyle: {

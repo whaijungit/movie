@@ -1,9 +1,14 @@
-import { Colors } from '@/helpers'
 import React from 'react'
+import { Colors } from '@/helpers'
 import { View, Text, StyleSheet } from 'react-native'
 
+interface IBlockItem {
+  title: React.ReactNode
+  value: React.ReactNode
+}
+
 interface IBlockItemProps {
-  items: [{ title: React.ReactNode, value: React.ReactNode }] | [{ title: React.ReactNode, value: React.ReactNode }, { title: React.ReactNode, value: React.ReactNode }]
+  items: [IBlockItem] | [IBlockItem, IBlockItem]
 }
 
 const BlockItem: React.FC<IBlockItemProps> = ({ items }) => {

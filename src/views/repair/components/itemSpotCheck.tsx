@@ -1,5 +1,5 @@
-import { Colors, windowSize } from '@/helpers'
 import React from 'react'
+import { Colors, windowSize } from '@/helpers'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 interface IItemSpotCheck {

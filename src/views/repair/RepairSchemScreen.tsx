@@ -13,7 +13,7 @@ interface IRepairSchemeScreenProps {
 const images = [require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png'), require('@/assets/test.png')]
 
 const RepairSchemeScreen: React.FC<IRepairSchemeScreenProps> = ({ navigation }) => {
-  const [exption, setExption] = React.useState<ILabel>({ label: '螺丝👎爱说大话', value: '123123123' })
+  const [exption, setExption] = React.useState<ILabel>({ label: '', value: '' })
   const handlePress = () => {
     SheetManager.show('exption')
   }

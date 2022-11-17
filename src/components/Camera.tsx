@@ -12,8 +12,8 @@ export interface RNCameraMethod extends RNCamera {
 }
 
 const Camera: React.ForwardRefRenderFunction<RNCameraMethod, CameraProps> = (props, ref) => {
-  const cameraRef = React.useRef<RNCamera>()
-  const [type, setType] = React.useState(false)
+  const cameraRef = React.useRef<RNCamera>(null!)
+  const [type] = React.useState(false)
   const handlePress = async () => {
     console.log(cameraRef)
     console.log(ref);

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Colors } from '@/helpers'
+import { Colors } from '../helpers'
 import { Pressable, StyleSheet, Text } from 'react-native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
