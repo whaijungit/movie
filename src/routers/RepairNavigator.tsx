@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 
-
 import MineScreen from '@/views/repair/mine'
 import SettingScreen from '@/views/repair/mine'
 import BindCarScreen from '@/views/repair/mine/BindDevice'

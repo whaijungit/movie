@@ -53,11 +53,12 @@ const ScannerScreen: React.FC = () => {
       <View style={styles.camerContainer}>
         <Camera
           autoFocus="on"
-          ref={() => cameraRef}
           type={camareType}
           captureAudio={false}
+          ref={() => cameraRef}
+          style={styles.container}
           onBarCodeRead={data ? undefined : handleScanner}
-          style={styles.container}>
+        >
           <Animated.View style={[styles.indctor, { transform: [{ translateY: top }] }]} />
           <View style={styles.controsContainer}>
             <TouchableOpacity onPress={() => setCamareType(type => {

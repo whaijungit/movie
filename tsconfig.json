@@ -3,7 +3,7 @@
     "lib": [
       "esnext"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "target": "esnext",
     "module": "commonjs",
     "skipLibCheck": true,

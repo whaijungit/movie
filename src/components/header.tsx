@@ -1,5 +1,5 @@
 import React from 'react'
-import { windowSize } from '@/helpers'
+import { windowSize, Colors } from '@/helpers'
 import { StyleSheet, View } from 'react-native'
 
 interface HomeHeaderProps {
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingHorizontal: 20,
     width: windowSize.width,
-    backgroundColor: 'rgb(19, 36, 52)',
+    backgroundColor: Colors.headerBarColor,
   }
 })
 
